@@ -4,6 +4,11 @@
 
 	header {
 		padding: 5rem;
+
+		&:before {
+			animation: spin 30s linear infinite;
+		}
+
 	}
 
 	.summary {
