@@ -19,22 +19,6 @@ $font-text: "Lato", sans-serif;
 
 // Animation
 
-@keyframes pulse {
-
-	0% {
-		transform: scale(0.99);
-	}
-
-	50% {
-		transform: scale(1.02);
-	}
-
-	100% {
-		transform: scale(0.99);
-	}
-
-}
-
 @keyframes spin {
 
 	0% {}
@@ -44,4 +28,3 @@ $font-text: "Lato", sans-serif;
 	}
 
 }
-

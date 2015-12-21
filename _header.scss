@@ -1,13 +1,24 @@
 /* Header */
 
 header {
-	background-color: $color-primary;
+	/*background-color: $color-primary;*/
 	box-sizing: border-box;
 	color: $color-text-accent;
 	padding: 5rem 2rem;
 
+	&:before {
+		content: "";
+		position: absolute;
+		width: 300%;
+		height: 300%;
+		top: -100%;
+		left: -100%;
+		z-index: -1;
+		background: url(header.svg) center center no-repeat;
+		animation: spin 30s linear infinite;
+	}
+
 	h1 {
-		animation: pulse 4s ease-in-out infinite;
 		font: {
 			family: $font-heading;
 			@include fntz(4);

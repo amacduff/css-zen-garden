@@ -76,7 +76,8 @@
 }
 
 .participation {
-	background: $color-text-accent url(op_art_2.jpg) center center no-repeat;
+	background: $color-text-accent url(op_art_2.svg) center center no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	color: $color-text-accent;
 	padding-top: 15rem;
@@ -187,5 +188,6 @@
 	left: -100%;
 	z-index: -1;
 	background: url(op_art_3.svg) center center no-repeat;
-	animation: spin 120s linear infinite;
+	background-attachment: fixed;
+	background-size: cover;
 }

@@ -55,17 +55,6 @@ table {
 }
 
 /* Variables */
-@keyframes pulse {
-  0% {
-    transform: scale(0.99);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(0.99);
-  }
-}
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -74,6 +63,7 @@ table {
 /* Mixins */
 /* Global Styles */
 body {
+  background-color: #ff310a;
   color: #333;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -109,13 +99,23 @@ a:hover {
 
 /* Header */
 header {
-  background-color: #ff310a;
+  /*background-color: $color-primary;*/
   box-sizing: border-box;
   color: #fff;
   padding: 5rem 2rem;
 }
+header:before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+  background: url(header.svg) center center no-repeat;
+  animation: spin 30s linear infinite;
+}
 header h1 {
-  animation: pulse 4s ease-in-out infinite;
   font-family: "Oswald", sans-serif;
   font-size: 64px;
   font-size: 4rem;
@@ -202,7 +202,8 @@ h3 {
 }
 
 .participation {
-  background: #fff url(op_art_2.jpg) center center no-repeat;
+  background: #fff url(op_art_2.svg) center center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: #fff;
   padding-top: 15rem;
@@ -286,7 +287,8 @@ h3 {
   left: -100%;
   z-index: -1;
   background: url(op_art_3.svg) center center no-repeat;
-  animation: spin 120s linear infinite;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Footer */
