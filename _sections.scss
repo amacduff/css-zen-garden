@@ -75,9 +75,8 @@
 }
 
 .participation {
-	background: $color-text-accent url(op_art_2.svg) center center no-repeat;
+	background: $color-text-accent url(op_art_2.svg) center center repeat;
 	background-attachment: fixed;
-	background-size: cover;
 	color: $color-text-accent;
 	padding-top: 15rem;
 
