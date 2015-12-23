@@ -302,6 +302,7 @@ footer a {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 300;
+  line-height: 3em;
   margin-right: 1rem;
   padding: 0.1rem 0.5rem;
 }
