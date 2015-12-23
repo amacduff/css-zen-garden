@@ -8,7 +8,7 @@ header {
 
 	&:before {
 		background: url(header.svg) center center no-repeat;
-		background-size: cover;
+		background-size: contain;
 		content: "";
 		position: absolute;
 		width: 100%;
