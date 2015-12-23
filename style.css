@@ -161,7 +161,7 @@ h3 {
   text-transform: uppercase;
 }
 .summary a:before {
-  content: "⬇";
+  content: "↓";
 }
 
 .preamble {
