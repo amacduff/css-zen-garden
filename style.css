@@ -476,6 +476,7 @@ a.design-name:after {
   }
   footer a {
     display: block;
+    line-height: 1em;
     margin-right: 0;
     padding: 1rem;
   }
